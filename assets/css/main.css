@@ -2593,30 +2593,21 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
 		flex-direction: column;
-		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
-		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
+		align-items: center;
+		justify-content: center;
 		background-color: #1f1815;
-		/* background-attachment: scroll,								scroll; */
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-attachment: fixed,								fixed;
+		background-image: url("images/overlay.png"), url("../../images/bg1.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		/* padding: 8em 4em; */
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
@@ -2653,8 +2644,8 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
+			display: flex;
+			width:11em;
 		}
 
 /* Footer */
@@ -2982,7 +2973,7 @@ input, select, textarea {
 	}
 
 	body.is-touch #header {
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: auto, cover;
 	}
 
@@ -2997,9 +2988,13 @@ input, select, textarea {
 	@media screen and (max-width: 1800px) {
 
 		/* Basic */
-
+		#header .inner{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 	}
@@ -3009,9 +3004,13 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		/* Header */
-
+		#header .inner{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 5em 3em 2em 3em;
 				width: 30%;
 			}
 
@@ -3056,6 +3055,12 @@ input, select, textarea {
 
 			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
 				display: none;
+			}
+			#header .inner{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 			}
 
 		/* List */
@@ -3137,6 +3142,12 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+		#header .inner{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
 
 			h1 {
 				font-size: 1.5em;
@@ -3219,10 +3230,19 @@ input, select, textarea {
 			#header {
 				padding: 4.5em 1.5em;
 			}
-
-				#header h1 br {
-					display: none;
-				}
+			
+			#header .inner{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			#header .inner h1{
+				margin-top: 10px;
+			}
+			#header h1 br {
+				display: none;
+			}
 
 		/* Footer */
 
