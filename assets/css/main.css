@@ -2238,6 +2238,9 @@ input, select, textarea {
 				top: 0;
 				width: 1em;
 			}
+			ul.labeled-icons li h3:hover {
+				color:#49bf9d;
+			}
 
 /* Actions */
 
@@ -3049,6 +3052,8 @@ input, select, textarea {
 			ul.icons li .icon {
 				font-size: 1.25em;
 			}
+
+		
 
 		/* Header */
 

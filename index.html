@@ -81,20 +81,28 @@
 								<p>Watch the soccer scores goals and video highlights. Created using API</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+								<a href="images/fulls/06.png" class="image fit thumb"><img src="images/thumbs/06.png" alt="" /></a>
+								<a href="https://ourteaminfo.netlify.app/" target="_blank">
+									<h3 title="click to go to site">Team Info CSS</h3>
+								</a>
+								<p>Displaying my css skills in this one section. Team Info section created using Pure html & css.<br />
+									Check out my githup page for more cool stuff i created using CSS.</p>
 							</article>
 						</div>
 						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
+							<li><a href="#one" class="button">Full Portfolio</a></li>
 						</ul>
 					</section>
 
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<p>
+							<h4>
+								PLEASE FILL OUT THE FORM BELOW AND I WILL CONTACT YOU SHORTLY.
+							</h4>
+							I respect your privacy 100%, so the information that you provide will remain strictly confidential. Nevertheless, a copy of your message might be stored in the records as a database entry for archival purposes.
+						</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
@@ -117,12 +125,12 @@
 										Uganda
 									</li>
 									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
+										<h3 class="icon brands fa-skype"><span class="label">Phone</span></h3>
+										<a href="https://join.skype.com/invite/A6W27VGSvQW5" target="_blank"> shameerchagani</a>
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">shameerchagani@gmail.com</a>
+										<a href="https:/mail.google.com" target="_blank">shameerchagani@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -453,14 +461,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" target="_blank" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" target="_blank" class="icon brands fa-discord"><span class="label">Email</span></a></li>
-						<li><a href="#" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://twitter.com/ChaganiShameer" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/shameerchagani" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://linkedin.com/in/shameer-chagani-59aa211ab" target="_blank" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://facebook.com/chaganishameer" target="_blank" class="icon brands fa-facebook"><span class="label">Email</span></a></li>
+						<li><a href="https://mail.google.com/" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Shameer Chagani - <span id="copyRight"></span></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -472,6 +480,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				let d = new Date()
+				let year = d.getFullYear()
+				document.querySelector('#copyRight').innerHTML = year
+			</script>
 
 	</body>
 </html>
